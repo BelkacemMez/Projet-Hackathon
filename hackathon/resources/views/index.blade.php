@@ -17,56 +17,101 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="row-cols-6">
-                                        <div class="dropdown">
+                                        <div class="dropdown show">
                                             <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
                                                     id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                                     style="background-color: #cbd5e0">
                                                 Collection
                                             </button>
-                                            <ul class="dropdown-menu">
+                                            <div class="dropdown-menu">
                                                 <button class="dropdown-item">Collection Steel</button>
                                                 <button class="dropdown-item">Golden Chic</button>
-                                            </ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row-cols-6">
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle" style="background-color: #cbd5e0">
+                                        <div class="dropdown show">
+                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                    style="background-color: #cbd5e0">
                                                 Cadran
                                             </button>
+                                            <div class="dropdown-menu">
+                                                <button class="dropdown-item">Noir</button>
+                                                <button class="dropdown-item">Blanc</button>
+                                                <button class="dropdown-item">Orange Sunray</button>
+                                                <button class="dropdown-item">Rose Sunray</button>
+                                                <button class="dropdown-item">Bleu Sunray</button>
+                                                <button class="dropdown-item">Vert Sunray</button>
+                                                <button class="dropdown-item">Rouge foncé Sunray</button>
+                                                <button class="dropdown-item">Kaki mat</button>
+                                                <button class="dropdown-item">Violet Sunray</button>
+                                                <button class="dropdown-item">Bleu foncé Sunray</button>
+                                                <button class="dropdown-item">Taupe</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row-cols-6">
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle" style="background-color: #cbd5e0">
+                                        <div class="dropdown show">
+                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                    style="background-color: #cbd5e0">
                                                 Matière
                                             </button>
+                                            <div class="dropdown-menu">
+                                                <button class="dropdown-item">Bracelet cuir</button>
+                                                <button class="dropdown-item">Bracelet silicone</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row-cols-6">
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle" style="background-color: #cbd5e0">
+                                        <div class="dropdown show">
+                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                    style="background-color: #cbd5e0">
                                                 Longueur
                                             </button>
+                                            <div class="dropdown-menu">
+                                                <button class="dropdown-item">Bracelet S-M</button>
+                                                <button class="dropdown-item">Bracelet L-XL</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row-cols-6">
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle" style="background-color: #cbd5e0">
+                                        <div class="dropdown show">
+                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                    style="background-color: #cbd5e0">
                                                 Style
                                             </button>
+                                            <div class="dropdown-menu">
+                                                <button class="dropdown-item">Bracelet large</button>
+                                                <button class="dropdown-item">Bracelet Fin</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row-cols-6">
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle" style="background-color: #cbd5e0">
+                                        <div class="dropdown show">
+                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                    style="background-color: #cbd5e0">
                                                 Couleur
                                             </button>
+                                            <div class="dropdown-menu">
+                                                <button class="dropdown-item">Rouge</button>
+                                                <button class="dropdown-item">Orange</button>
+                                                <button class="dropdown-item">Bleu foncé</button>
+                                                <button class="dropdown-item">Noir</button>
+                                                <button class="dropdown-item">Taupe</button>
+                                                <button class="dropdown-item">Blanc</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row-cols-6">
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle" style="background-color: #cbd5e0">
+                                        <div class="dropdown show">
+                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                                    style="background-color: #cbd5e0">
                                                 Gravure
                                             </button>
                                         </div>
