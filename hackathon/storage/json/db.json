@@ -1,0 +1,107 @@
+{
+    "configMenu": {
+            "menu": [
+                {
+                    "name": "collection",
+                    "ordre": 1
+                },
+                {
+                    "name": "cadran",
+                    "ordre": 2
+                },
+                {
+                    "name": "matiére",
+                    "ordre": 3
+                },
+                {
+                    "name": "longueur",
+                    "ordre": 4
+                },
+                {
+                    "name": "style",
+                    "ordre": 5
+                },
+                {
+                    "name": "couleur",
+                    "ordre": 6
+                }
+            ],
+        "items": [
+            {
+                "name": "steel cool",
+                "type": "collection",
+                "image": "images/"
+            },
+            {
+                "name": "golder chic",
+                "type": "cadran",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet cuir",
+                "type": "matiere",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet silicone",
+                "type": "matiere",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet S/M",
+                "type": "Longueur",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet L/XL",
+                "type": "Longueur",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet Large",
+                "type": "style",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet Fin",
+                "type": "style",
+                "image": "images/"
+            },
+            {
+                "name": "noir",
+                "type": "cadran",
+                "image": "images/"
+            },
+            {
+                "name": "orange",
+                "type": "cadran",
+                "image": "images/"
+            },
+            {
+                "name": "rose",
+                "type": "cadran",
+                "image": "images/"
+            },
+            {
+                "name": "vert",
+                "type": "cadran",
+                "image": "images/"
+            },
+            {
+                "name": "orange",
+                "type": "couleur",
+                "image": "images/"
+            },
+            {
+                "name": "rose",
+                "type": "couleur",
+                "image": "images/"
+            },
+            {
+                "name": "vert",
+                "type": "couleur",
+                "image": "images/"
+            }
+        ]
+    }
+}
