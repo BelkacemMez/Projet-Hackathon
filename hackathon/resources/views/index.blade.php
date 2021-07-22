@@ -2,128 +2,106 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+        <div class="container-fluid">
+            <div class="row">
+                {{-- Image --}}
+                <div class="col-6">
+                    <div class="card-img">
+                        <img src="./public/images/Silicone%20Fin/Augarde-_0013_RUBBER-gris.png" width="100%" height="50%">
+                    </div>
+                </div>
+                {{-- Liste de boutons collapsibles --}}
+                <div class="col-6">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Collection
+                                    </button>
+                                </h5>
+                            </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">Generateur de montres</div>
-                    <div class="panel-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="card-img">
-                                        <img src="./resources/img/jeux-de-des.jpeg" width="100%" height="50%">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="row-cols-6">
-                                        <div class="dropdown show">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                    style="background-color: #cbd5e0">
-                                                Collection
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <button class="dropdown-item">Collection Steel</button>
-                                                <button class="dropdown-item">Golden Chic</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-cols-6">
-                                        <div class="dropdown show">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                    style="background-color: #cbd5e0">
-                                                Cadran
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <button class="dropdown-item">Noir</button>
-                                                <button class="dropdown-item">Blanc</button>
-                                                <button class="dropdown-item">Orange Sunray</button>
-                                                <button class="dropdown-item">Rose Sunray</button>
-                                                <button class="dropdown-item">Bleu Sunray</button>
-                                                <button class="dropdown-item">Vert Sunray</button>
-                                                <button class="dropdown-item">Rouge foncé Sunray</button>
-                                                <button class="dropdown-item">Kaki mat</button>
-                                                <button class="dropdown-item">Violet Sunray</button>
-                                                <button class="dropdown-item">Bleu foncé Sunray</button>
-                                                <button class="dropdown-item">Taupe</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-cols-6">
-                                        <div class="dropdown show">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                    style="background-color: #cbd5e0">
-                                                Matière
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <button class="dropdown-item">Bracelet cuir</button>
-                                                <button class="dropdown-item">Bracelet silicone</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-cols-6">
-                                        <div class="dropdown show">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                    style="background-color: #cbd5e0">
-                                                Longueur
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <button class="dropdown-item">Bracelet S-M</button>
-                                                <button class="dropdown-item">Bracelet L-XL</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-cols-6">
-                                        <div class="dropdown show">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                    style="background-color: #cbd5e0">
-                                                Style
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <button class="dropdown-item">Bracelet large</button>
-                                                <button class="dropdown-item">Bracelet Fin</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-cols-6">
-                                        <div class="dropdown show">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                    style="background-color: #cbd5e0">
-                                                Couleur
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <button class="dropdown-item">Rouge</button>
-                                                <button class="dropdown-item">Orange</button>
-                                                <button class="dropdown-item">Bleu foncé</button>
-                                                <button class="dropdown-item">Noir</button>
-                                                <button class="dropdown-item">Taupe</button>
-                                                <button class="dropdown-item">Blanc</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row-cols-6">
-                                        <div class="dropdown show">
-                                            <button class="btn btn-secondary btn-lg dropdown-toggle show" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                    style="background-color: #cbd5e0">
-                                                Gravure
-                                            </button>
-                                        </div>
-                                    </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    ok
                                 </div>
                             </div>
                         </div>
-
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Cadran
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    ok
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Matière
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    ok
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Longueur
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    ok
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Style
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    ok
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Couleur
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    ok
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 @endsection
-
