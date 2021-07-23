@@ -2,163 +2,43 @@
 
 @section('content')
     <div class="container">
-        <div class="container-fluid">
-            <div class="row">
-                {{-- Image --}}
-                <div class="col-6">
-                    <div class="card-img">
-                        <img src= "{{asset('images/SiliconeFin/rubbergris')}}">
-                    </div>
-                </div>
-                {{-- Liste de boutons collapsibles --}}
-                <div class="col-6">
-                    <div id="accordion">
-                        {{-- Collection --}}
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Collection
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                                    <label class="btn btn-secondary" for="option1">Steel Cool</label>
-                                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option2">Golden Chic</label>
-                            </div>
-                        </div>
-                        {{-- Cadran --}}
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Cadran
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                                    <label class="btn btn-secondary" for="option1">Noir</label>
-                                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option2">Blanc</label>
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option3">Orange Sunray</label>
-                                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option4">Rose Sunray</label>
-                                    <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option5">Bleu ciel Sunray</label>
-                                    <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option6">Vert Sunray</label>
-                                    <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option7">Rouge foncé Sunray</label>
-                                    <input type="radio" class="btn-check" name="options" id="option8" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option8">Kaki</label>
-                                    <input type="radio" class="btn-check" name="options" id="option9" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option9">Violet Sunray</label>
-                                    <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option10">Bleu foncé Sunray</label>
-                                    <input type="radio" class="btn-check" name="options" id="option11" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option11">Taupe</label>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card w-200">
+                    <div class="card-header">{{ __('Montre') }}</div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-md-8">
+                                    <div class="card-img">
+                                        <div id="conteneur" style="position:relative;">
+                                            <img id="img1" class="img1" src='{{ asset("images/Cadran Blanc et Noir/Augarde_0032_cadran-blanc-chrome.png") }}' width="600" height="700" alt="">
+                                            <img id="img2" class="img2" style="position:absolute;top:0;left:0px;" src='{{ asset('images/Cuir Fin/Augarde_0020_cuir-bracelet-violet.png') }}' width="600" height="700" alt="">
+                                            <img id="img3" class="img3" style="position:absolute;top:0;left:0px;" src='{{ asset('images/Boitiers et Aiguilles Gold et Acier/Augarde_0030_aiguilles-or.png') }}' width="600" height="700" alt="">
+                                            <img id="img4" class="img4" style="position:absolute;top:0;left:0px;" src='{{ asset('images/Boitiers et Aiguilles Gold et Acier/Augarde_0047_montre-boitier-chrome.png') }}' width="600" height="700" alt="">
+
+                                        </div>
+
+
+
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        {{-- Matière --}}
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Matière
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                                    <label class="btn btn-secondary" for="option1">Bracelet Cuir</label>
-                                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option2">Bracelet Silicone</label>
-                                </div>
-                            </div>
-                        </div>
-                        {{-- Longueur --}}
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Longueur
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                <div class="card-body">
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                                    <label class="btn btn-secondary" for="option1">Bracelet S-M</label>
-                                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option2">Golden L-XL</label>
-                                </div>
-                            </div>
-                        </div>
-                        {{-- Style --}}
-                        <div class="card">
-                            <div class="card-header" id="headingFive">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Style
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                <div class="card-body">
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                                    <label class="btn btn-secondary" for="option1">Bracelet Large</label>
-                                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option2">Bracelet Fin</label>
-                                </div>
-                            </div>
-                        </div>
-                        {{-- Couleur--}}
-                        <div class="card">
-                            <div class="card-header" id="headingSix">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        Couleur
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                                <div class="card-body">
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                                    <label class="btn btn-secondary" for="option1">Rouge</label>
-                                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option2">Marron</label>
-                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option3">Orange</label>
-                                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option4">Bleu foncé</label>
-                                    <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option5">Noir</label>
-                                    <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option6">Taupe</label>
-                                    <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
-                                    <label class="btn btn-secondary" for="option7">Blanc</label>
-                                </div>
-                            </div>
-                        </div>
-                        {{-- Gravure --}}
-                        <div class="card">
-                            <div class="card-header" id="headingSeven">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        Gravure
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                                <div class="card-body"></div>
+                                <div class="col-md-4">
+                                    @foreach($menus as $menu)
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{ $menu['name']}}</button>
+
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                    <div id="{{ $menu["name"] }}"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
                             </div>
                         </div>
                     </div>
@@ -166,4 +46,75 @@
             </div>
         </div>
     </div>
+
+@endsection
+@section('script')
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $.ajax({
+                        url: 'api/all',
+                        type: 'get',
+                        dataType: 'json',
+
+                        success: function (data) {
+
+
+                            menus=data["menu"];
+                            items=data["items"];
+                            styles=data["items"][""]
+                            function generateImage(){
+                                    $.each(items, function (i, item) {
+                                        if(item.default){
+                                            switch (item.type){
+                                                case "collection": $("#img1").attr("src",'{{ URL::asset('') }}' +item.image);
+                                                case "cadran" :$("#img3").attr("src",'{{ URL::asset('') }}' +item.image);
+                                                case "couleur": if(item.categorie=="silicone Fin silicone") $("#img2").attr("src",'{{ URL::asset('') }}' +item.image);
+                                            }
+                                        }
+                                    });
+                            }
+                            generateImage();
+                            function generate(var1,var2){
+                                if(var2.default){
+                                    return '<input type="radio" class="btn-check" name="'+var1.type+'" value="'+var1.type+' '+var2.name+'" id="'+var1.type+' '+var2.name+'" autocomplete="off" checked>'
+                                        +'<label class="btn btn-secondary" for="'+var1.type+' '+var2.name+'">'+var2.name+'</label>'
+                                }else{
+                                    return '<input type="radio" class="btn-check" name="'+var1.type+'" value="'+var1.type+' '+var2.name+'" id="'+var1.type+' '+var2.name+'" autocomplete="off">'
+                                        +'<label class="btn btn-secondary" for="'+var1.type+' '+var2.name+'">'+var2.name+'</label>'
+                                }
+                            }
+                            $.each(menus, function(i, menu) {
+                                html="";
+                                $.each(items, function(i, item) {
+                                    if(menu.type==item.type){
+                                        if(menu.type=="style"){
+                                            if(item.categorie=="bracelet cuir"){
+                                                html=html+generate(menu,item);
+                                            }
+                                        }else{
+                                            if(menu.type=="couleur"){
+                                                if(item.categorie=="bracelet Fin cuir"){
+                                                    html=html+generate(menu,item);
+                                                }
+                                            }else{
+                                                html=html+generate(menu,item);
+                                            }
+
+                                        }
+                                    }
+
+                                });
+                                $("#"+menu.name+"").html(html);
+                            });
+
+
+
+
+                        },
+                        complete: function (data) {
+                            generateImage();
+                        }
+                    });
+                });
+            </script>
 @endsection
