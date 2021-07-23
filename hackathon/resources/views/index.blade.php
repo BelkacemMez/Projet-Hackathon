@@ -34,7 +34,7 @@
                                         </div>
                                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                             <div class="card-body">
-                                                    <div id="{{ $menu["name"] }}"></div>
+                                                    <div id="menu{{ $menu["name"] }}"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -61,60 +61,223 @@
 
                             menus=data["menu"];
                             items=data["items"];
-                            styles=data["items"][""]
-                            function generateImage(){
+                            styles=data["items"];
+                           /* function generateImage(){
                                     $.each(items, function (i, item) {
                                         if(item.default){
                                             switch (item.type){
-                                                case "collection": $("#img1").attr("src",'{{ URL::asset('') }}' +item.image);
-                                                case "cadran" :$("#img3").attr("src",'{{ URL::asset('') }}' +item.image);
+                                                case "collection": $("#img4").attr("src",'{{ URL::asset('') }}' +item.image);
+                                                case "cadran" :$("#img1").attr("src",'{{ URL::asset('') }}' +item.image);
                                                 case "couleur": if(item.categorie=="silicone Fin silicone") $("#img2").attr("src",'{{ URL::asset('') }}' +item.image);
                                             }
                                         }
                                     });
                             }
-                            generateImage();
+                            generateImage();*/
                             function generate(var1,var2){
+                                form='<form name="'+var1.type+'">';
                                 if(var2.default){
-                                    return '<input type="radio" class="btn-check" name="'+var1.type+'" value="'+var1.type+' '+var2.name+'" id="'+var1.type+' '+var2.name+'" autocomplete="off" checked>'
-                                        +'<label class="btn btn-secondary" for="'+var1.type+' '+var2.name+'">'+var2.name+'</label>'
+                                    return '<input type="radio" class="btn-check"  name="'+var1.type+'" value="'+var2.image+'" id="'+var2.categorie+''+var2.name+'" autocomplete="off" checked>'
+                                        +'<label class="btn btn-secondary" for="'+var2.categorie+''+var2.name+'">'+var2.name+'</label></form>'
                                 }else{
-                                    return '<input type="radio" class="btn-check" name="'+var1.type+'" value="'+var1.type+' '+var2.name+'" id="'+var1.type+' '+var2.name+'" autocomplete="off">'
-                                        +'<label class="btn btn-secondary" for="'+var1.type+' '+var2.name+'">'+var2.name+'</label>'
+                                    return '<input type="radio" class="btn-check" name="'+var1.type+'" value="'+var2.image+'" id="'+var2.categorie+''+var2.name+'" autocomplete="off">'
+                                        +'<label class="btn btn-secondary"  for="'+var2.categorie+''+var2.name+'">'+var2.name+'</label>'
                                 }
                             }
                             $.each(menus, function(i, menu) {
                                 html="";
                                 $.each(items, function(i, item) {
                                     if(menu.type==item.type){
-                                        if(menu.type=="style"){
-                                            if(item.categorie=="bracelet cuir"){
-                                                html=html+generate(menu,item);
-                                            }
-                                        }else{
-                                            if(menu.type=="couleur"){
-                                                if(item.categorie=="bracelet Fin cuir"){
-                                                    html=html+generate(menu,item);
-                                                }
-                                            }else{
-                                                html=html+generate(menu,item);
-                                            }
 
-                                        }
+                                        html=html+generate(menu,item);
                                     }
 
                                 });
-                                $("#"+menu.name+"").html(html);
+                                $("#menu"+menu.name+"").html(html);
                             });
-
-
-
-
                         },
                         complete: function (data) {
-                            generateImage();
+
                         }
                     });
+
                 });
+                $( window ).load(function() {
+                    //$("#cadrankaki").hide();
+                    function generateImage(){
+                        $("#img1").attr("src",'{{ URL::asset('') }}' +$( "input[name='cadran']" ).val());
+                        $("#img2").attr("src",'{{ URL::asset('') }}' +$( "input[name='couleur']" ).val());
+                        $("#img4").attr("src",'{{ URL::asset('') }}' +$( "input[name='collection']" ).val());
+                    }
+                    loadPage();
+                    function loadPage () {
+                        return new Promise(function (resolve, reject) {
+                            setTimeout(function () {
+                                resolve("anything");
+                            }, 100);
+                        });
+                    }
+                    loadPage()
+                        .then(
+                            function (result) {
+                                id=$( "input[name='matiere']" ).attr("id");
+                                name=$( "input[name='matiere']" ).attr("name");
+                                $.ajax({
+                                    url: 'api/items',
+                                    type: 'get',
+                                    dataType: 'json',
+
+                                    success: function (data) {
+                                        $.each(data, function(i, item) {
+                                            if(item.parent==name){
+                                                if(id==item.categorie){
+                                                    $("#"+item.categorie+item.name).show();
+                                                    $( "label[for='"+item.categorie+item.name+"']" ).show();
+                                                    $("#"+item.categorie+item.name).prop('checked', true);
+                                                }else{
+                                                    $("#"+item.categorie+item.name).hide();
+                                                    $( "label[for='"+item.categorie+item.name+"']" ).hide();
+                                                }
+                                            }
+                                        });
+                                    },
+                                    complete: function(data){
+                                        id=$( "input[name='style']" ).attr("id");
+                                        name=$( "input[name='style']" ).attr("name");
+                                        $.ajax({
+                                            url: 'api/items',
+                                            type: 'get',
+                                            dataType: 'json',
+
+                                            success: function (data) {
+                                                j=0;
+                                                $.each(data, function(i, item) {
+                                                    if(item.parent==name){
+                                                        if(id==item.categorie){
+                                                            j++;
+                                                            $("#"+item.categorie+item.name).show();
+                                                            $( "label[for='"+item.categorie+item.name+"']" ).show();
+                                                            if(j==1){
+                                                                $("#"+item.categorie+item.name).prop('checked', true);
+                                                            }
+                                                        }else{
+                                                            $("#"+item.categorie+item.name).hide();
+                                                            $( "label[for='"+item.categorie+item.name+"']" ).hide();
+                                                        }
+                                                    }
+                                                });
+                                            }
+                                        });
+                                    }
+                                });
+
+                                generateImage();
+                            }
+                        );
+
+
+
+                    $( "input[name='collection']" ).change(function(){
+                        $("#img4").attr("src",'{{ URL::asset('') }}' +$( this ).val());
+                    });
+                    $( "input[name='cadran']" ).change(function(){
+                        $("#img1").attr("src",'{{ URL::asset('') }}' +$( this ).val());
+                    });
+                    $( "input[name='matiere']" ).change(function(){
+                        id=this.id;
+                        name=this.name;
+                        $.ajax({
+                            url: 'api/items',
+                            type: 'get',
+                            dataType: 'json',
+
+                            success: function (data) {
+                                j=0;
+                                $.each(data, function(i, item) {
+
+                                    if(item.parent==name){
+                                        if(id==item.categorie){
+                                            j++;
+                                            $("#"+item.categorie+item.name).show();
+                                            $( "label[for='"+item.categorie+item.name+"']" ).show();
+                                            if(j==1){
+                                                $("#"+item.categorie+item.name).prop('checked', true);
+                                            }
+                                        }else{
+                                            $("#"+item.categorie+item.name).hide();
+                                            $( "label[for='"+item.categorie+item.name+"']" ).hide();
+                                        }
+                                    }
+                                });
+                            },
+                            complete: function(data){
+                                id=$( "input[name='style']" ).attr("id");
+                                name=$( "input[name='style']" ).attr("name");
+                                $.ajax({
+                                    url: 'api/items',
+                                    type: 'get',
+                                    dataType: 'json',
+
+                                    success: function (data) {
+                                        j=0;
+                                        $.each(data, function(i, item) {
+                                            if(item.parent==name){
+                                                if(id==item.categorie){
+                                                    j++;
+                                                    $("#"+item.categorie+item.name).show();
+                                                    $( "label[for='"+item.categorie+item.name+"']" ).show();
+                                                    if(j==1){
+
+                                                        $("#"+item.categorie+item.name).prop('checked', true);
+                                                    }
+                                                }else{
+                                                    $("#"+item.categorie+item.name).hide();
+                                                    $( "label[for='"+item.categorie+item.name+"']" ).hide();
+                                                }
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+
+                        generateImage();
+
+                    });
+                    $( "input[name='style']" ).click(function(){
+                        id=this.id;
+                        name=this.name;
+                        $.ajax({
+                            url: 'api/items',
+                            type: 'get',
+                            dataType: 'json',
+
+                            success: function (data) {
+                                j=0;
+                                $.each(data, function(i, item) {
+                                    if(item.parent==name){
+                                        if(id==item.categorie){
+                                            j++;
+                                            $("#"+item.categorie+item.name).show();
+                                            $( "label[for='"+item.categorie+item.name+"']" ).show();
+                                            if(j==1){
+                                                $("#"+item.categorie+item.name).prop('checked', true);
+                                            }
+                                        }else{
+                                            $("#"+item.categorie+item.name).hide();
+                                            $( "label[for='"+item.categorie+item.name+"']" ).hide();
+                                        }
+                                    }
+                                });
+                            }
+                        });
+
+                    });
+                    $( "input[name='couleur']" ).click(function(){
+                        $("#img2").attr("src",'{{ URL::asset('') }}' +$( this ).val());
+                    });
+                })
+
+
             </script>
 @endsection
