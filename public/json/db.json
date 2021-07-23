@@ -1,0 +1,202 @@
+{
+    "menu": [
+                {
+                    "name": "collection",
+                    "ordre": 1,
+                    "type": "collection"
+                },
+                {
+                    "name": "cadran",
+                    "ordre": 2,
+                    "type": "cadran"
+                },
+                {
+                    "name": "matiére",
+                    "ordre": 3,
+                    "type": "matiere"
+                },
+                {
+                    "name": "longueur",
+                    "ordre": 4,
+                    "type": "Longueur"
+                },
+                {
+                    "name": "style",
+                    "ordre": 5,
+                    "type": "style"
+                },
+                {
+                    "name": "couleur",
+                    "ordre": 6,
+                    "type": "couleur"
+                }
+            ],
+        "items": [
+            {
+                "name": "steel cool",
+                "type": "collection",
+                "default": "true",
+                "categorie":"collection",
+                "image": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0047_montre-boitier-chrome.png",
+                "image2": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0030_aiguilles-chrome.png"
+            },
+            {
+                "name": "golder chic",
+                "type": "collection",
+                "categorie":"collection",
+                "image": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0048_montre-boitier-or.png",
+                "image2": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0030_aiguilles-or.png"
+            },
+            {
+                "name": "kaki",
+                "type": "cadran",
+                "default": "true",
+                "categorie":"cadran",
+                "image": "images/Cadran couleurs/Augarde-_0036_cadran-kaki.png"
+            },
+            {
+                "name": "militaire",
+                "type": "cadran",
+                "categorie":"cadran",
+                "image": "images/Cadran couleurs/Augarde-_0035_cadran-militaire.png"
+            },
+            {
+                "name": "gris",
+                "type": "cadran",
+                "categorie":"cadran",
+                "image": "images/Cadran couleurs/Augarde-_0034_cadran-gris-sunray.png"
+            },
+            {
+                "name": "cuir",
+                "type": "matiere",
+                "categorie":"matiere",
+                "default": "true"
+            },
+            {
+                "name": "Fin",
+                "type": "style",
+                "default": "true",
+                "parent": "matiere",
+                "categorie":"matierecuir",
+                "image": "images/"
+            },
+            {
+                "name": "noir",
+                "type": "couleur",
+                "parent": "style",
+                "default": "true",
+                "categorie": "matierecuirFin",
+                "image": "images/Cuir Fin/Augarde_0029_cuir-bracelet-noir.png"
+            },
+            {
+                "name": "violet",
+                "type": "couleur",
+                "parent": "style",
+                "categorie": "matierecuirFin",
+                "image": "images/Cuir Fin/Augarde_0020_cuir-bracelet-violet.png"
+            },
+            {
+                "name": "vert",
+                "type": "couleur",
+                "parent": "style",
+                "categorie": "matierecuirFin",
+                "image": "images/Cuir Fin/Augarde_0021_cuir-bracelet-vert.png"
+            },
+            {
+                "name": "rose",
+                "type": "couleur",
+                "parent": "style",
+                "categorie": "matierecuirFin",
+                "image": "images/Cuir Fin/Augarde_0023_cuir-bracelet-rose.png"
+            },
+            {
+                "name": "silicone",
+                "type": "matiere",
+                "categorie":"matiere"
+            },
+            {
+                "name": "Fin",
+                "categorie":"matieresilicone",
+                "default": "true",
+                "parent": "matiere",
+                "type": "style",
+                "image": "images/"
+            },
+            {
+                "name": "orange",
+                "type": "couleur",
+                "parent": "style",
+                "categorie": "matieresiliconeFin",
+                "default": "true",
+                "image": "images/SiliconeFin/Augarde_0018_RUBBER-orange.png"
+            },
+            {
+                "name": "blanc",
+                "type": "couleur",
+                "parent": "style",
+                "categorie": "matieresiliconeFin",
+                "image": "images/SiliconeFin/Augarde_0016_RUBBER-blanc.png"
+            },
+            {
+                "name": "rouge",
+                "type": "couleur",
+                "parent": "style",
+                "categorie": "matieresiliconeFin",
+                "image": "images/SiliconeFin/Augarde_0019_RUBBER-rouge.png"
+            },
+            {
+                "name": "kaki",
+                "type": "couleur",
+                "parent": "style",
+                "categorie": "matieresiliconeFin",
+                "image": "images/SiliconeFin/Augarde-_0014_RUBBER-kaki.png"
+            },
+            {
+                "name": "Large",
+                "categorie":"matieresilicone",
+                "type": "style",
+                "parent": "matiere",
+                "image": "images/"
+            },
+            {
+                "name": "marron",
+                "type": "couleur",
+                "parent": "style",
+                "categorie":"matieresiliconeLarge",
+                "image": "images/Silicone Large/Augarde-_0008_RUBBER-large-marron.png"
+            },
+            {
+                "name": "blanc",
+                "type": "couleur",
+                "default": "true",
+                "parent": "style",
+                "categorie":"matieresiliconeLarge",
+                "image": "images/Silicone Large/Augarde_0002_RUBBER-large-blanc.png"
+            },
+            {
+                "name": "rouge",
+                "type": "couleur",
+                "parent": "style",
+                "categorie":"matieresiliconeLarge",
+                "image": "images/Silicone Large/Augarde_0003_RUBBER-large-rouge.png"
+            },
+            {
+                "name": "noir",
+                "type": "couleur",
+                "parent": "style",
+                "categorie":"matieresiliconeLarge",
+                "image": "images/Silicone Large/Augarde_0009_RUBBER-large-noir.png"
+            },
+            {
+                "name": "bracelet S/M",
+                "type": "Longueur",
+                "default": "true",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet L/XL",
+                "type": "Longueur",
+                "image": "images/"
+            }
+        ]
+}

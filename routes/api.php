@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::get('/menu', [App\Http\Controllers\ItemConfigurationController::class, 'menu']);
 Route::get('/items', [App\Http\Controllers\ItemConfigurationController::class, 'items']);
+Route::get('/all', [App\Http\Controllers\ItemConfigurationController::class, 'all']);
