@@ -102,7 +102,7 @@
                     });
 
                 });
-                $( window ).load(function() {
+                $( window ).on("load",function() {
                     //$("#cadrankaki").hide();
                     function generateImage(){
                         $("#img1").attr("src",'{{ URL::asset('') }}' +$( "input[name='cadran']" ).val());
