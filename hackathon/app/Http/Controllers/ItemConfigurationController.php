@@ -11,7 +11,7 @@ class ItemConfigurationController extends Controller
     public function menu()
     {
         try {
-            $path = storage_path() . "/json/db.json";
+            $path = public_path("json/db.json");
             $json = json_decode(file_get_contents($path), true);
             return response()->json($json["menu"], 200);
         } catch (\Exception $e) {
@@ -21,9 +21,20 @@ class ItemConfigurationController extends Controller
     public function items()
     {
         try {
-            $path = storage_path() . "/json/db.json";
+            $path = public_path("json/db.json");
             $json = json_decode(file_get_contents($path), true);
             return response()->json($json["items"], 200);
+        } catch (\Exception $e) {
+
+            return response()->json(storage_path(), 400);
+        }
+    }
+    public function all()
+    {
+        try {
+            $path = public_path("json/db.json");
+            $json = json_decode(file_get_contents($path), true);
+            return response()->json($json, 200);
         } catch (\Exception $e) {
 
             return response()->json(storage_path(), 400);

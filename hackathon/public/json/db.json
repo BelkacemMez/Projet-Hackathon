@@ -1,0 +1,180 @@
+{
+    "menu": [
+                {
+                    "name": "collection",
+                    "ordre": 1,
+                    "type": "collection"
+                },
+                {
+                    "name": "cadran",
+                    "ordre": 2,
+                    "type": "cadran"
+                },
+                {
+                    "name": "matiére",
+                    "ordre": 3,
+                    "type": "matiere"
+                },
+                {
+                    "name": "longueur",
+                    "ordre": 4,
+                    "type": "Longueur"
+                },
+                {
+                    "name": "style",
+                    "ordre": 5,
+                    "type": "style"
+                },
+                {
+                    "name": "couleur",
+                    "ordre": 6,
+                    "type": "couleur"
+                }
+            ],
+        "items": [
+            {
+                "name": "steel cool",
+                "type": "collection",
+                "default": "true",
+                "image": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0047_montre-boitier-chrome.png",
+                "image2": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0030_aiguilles-chrome.png"
+            },
+            {
+                "name": "golder chic",
+                "type": "collection",
+                "image": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0047_montre-boitier-or.png",
+                "image2": "images/Boitiers et Aiguilles Gold et Acier/Augarde_0030_aiguilles-or.png"
+            },
+            {
+                "name": "kaki",
+                "type": "cadran",
+                "default": "true",
+                "image": "images/Cadran couleurs/Augarde-_0036_cadran-kaki.png"
+            },
+            {
+                "name": "militaire",
+                "type": "cadran",
+                "image": "images/Cadran couleurs/Augarde-_0035_cadran-militaire.png"
+            },
+            {
+                "name": "gris",
+                "type": "cadran",
+                "image": "images/Cadran couleurs/Augarde-_0034_cadran-gris-sunray.png"
+            },
+            {
+                "name": "bracelet cuir",
+                "type": "matiere",
+                "default": "true"
+            },
+            {
+                "name": "bracelet Fin",
+                "type": "style",
+                "default": "true",
+                "categorie":"bracelet cuir",
+                "image": "images/"
+            },
+            {
+                "name": "or",
+                "type": "couleur",
+                "default": "true",
+                "categorie": "bracelet Fin cuir",
+                "image": "images/Cuir Fin/Augarde_0011_boucle-cuir-or.png"
+            },
+            {
+                "name": "violet",
+                "type": "couleur",
+                "categorie": "bracelet Fin cuir",
+                "image": "images/Cuir Fin/Augarde_0020_cuir-bracelet-violet.png"
+            },
+            {
+                "name": "vert",
+                "type": "couleur",
+                "categorie": "bracelet Fin cuir",
+                "image": "images/Cuir Fin/Augarde_0021_cuir-bracelet-vert.png"
+            },
+            {
+                "name": "rose",
+                "type": "couleur",
+                "categorie": "bracelet Fin cuir",
+                "image": "images/Cuir Fin/Augarde_0023_cuir-bracelet-rose.png"
+            },
+            {
+                "name": "bracelet silicone",
+                "type": "matiere"
+            },
+            {
+                "name": "bracelet Fin",
+                "categorie":"bracelet silicone",
+                "default": "true",
+                "type": "style",
+                "image": "images/"
+            },
+            {
+                "name": "marron",
+                "type": "couleur",
+                "categorie":"silicone Fin silicone",
+                "default": "true",
+                "image": "images/Silicone Large/Augarde-_0008_RUBBER-marron.png"
+            },
+            {
+                "name": "blanc",
+                "type": "couleur",
+                "categorie":"silicone Fin silicone",
+                "image": "images/Silicone Large/Augarde_0002_RUBBER-blanc.png"
+            },
+            {
+                "name": "rouge",
+                "type": "couleur",
+                "categorie":"silicone Fin silicone",
+                "image": "images/Silicone Large/Augarde_0003_RUBBER-rouge.png"
+            },
+            {
+                "name": "noir",
+                "type": "couleur",
+                "categorie":"silicone Fin silicone",
+                "image": "images/Silicone Large/Augarde_0009_RUBBER-noir.png"
+            },
+            {
+                "name": "bracelet Large",
+                "categorie":"bracelet silicone",
+                "type": "style",
+                "image": "images/"
+            },
+            {
+                "name": "marron",
+                "type": "couleur",
+                "categorie":"silicone Large silicone",
+                "image": "images/Silicone Large/Augarde-_0008_RUBBER-marron.png"
+            },
+            {
+                "name": "blanc",
+                "type": "couleur",
+                "default": "true",
+                "categorie":"silicone Large silicone",
+                "image": "images/Silicone Large/Augarde_0002_RUBBER-blanc.png"
+            },
+            {
+                "name": "rouge",
+                "type": "couleur",
+                "categorie":"silicone Large silicone",
+                "image": "images/Silicone Large/Augarde_0003_RUBBER-rouge.png"
+            },
+            {
+                "name": "noir",
+                "type": "couleur",
+                "categorie":"silicone Large silicone",
+                "image": "images/Silicone Large/Augarde_0009_RUBBER-noir.png"
+            },
+            {
+                "name": "bracelet S/M",
+                "type": "Longueur",
+                "default": "true",
+                "image": "images/"
+            },
+            {
+                "name": "bracelet L/XL",
+                "type": "Longueur",
+                "image": "images/"
+            }
+        ]
+}
